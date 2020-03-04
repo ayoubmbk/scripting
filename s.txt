@@ -1,0 +1,11 @@
+MemTotal:        5989404 kB
+MemFree:         3505124 kB
+MemAvailable:    4468068 kB
+major minor  #blocks  name
+
+  11        0    1048575 sr0
+   8        0   20971520 sda
+   8        1   18873344 sda1
+   8        2          1 sda2
+   8        5    2095104 sda5
+Linux version 4.15.0-46-generic (buildd@lgw01-amd64-008) (gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.10)) #49~16.04.1-Ubuntu SMP Tue Feb 12 17:45:24 UTC 2019

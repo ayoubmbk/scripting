@@ -1,0 +1,6 @@
+Guide d'utilisation du programme :
+Bouton mémoire ou Option -lmem:Afficher les informations en relation avec la mémoire
+Bouton dd ou Option -lpart    :Afficher les informations en relation avec le disque dur
+Bouton kernel ou Option -kernel:Afficher la version du noyau
+Bouton sauvgarder ou option --save:sauvgarder les informations les plus pertinentes 
+
