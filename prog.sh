@@ -9,7 +9,9 @@ yad  --text="Choose a commande" \
 --button="help":5 \
 --button="sauvegarder":6 \
 --button="afficher":7 \
---button="date de lancement":8 
+--button="date de lancement":8 \
+--button="Processeur ":9 \
+--button="ports utilisés  ":10 
 
 foo=$?
 
@@ -43,8 +45,19 @@ then
 	yad --fullscreen --text-info --filename="s.txt"
 elif [[ $foo -eq 8 ]]
 then
-cat /proc/uptime >date.txt
+uptime -p >date.txt
+nano date.txt
 	yad --fullscreen --text-info --filename="date.txt"
+elif [ $foo -eq 9 ]
+then
+	cat /proc/cpuinfo >cpu.txt
+	yad --fullscreen --text-info --filename="cpu.txt"
+elif [ $foo -eq 10 ]
+then
+	cat /proc/ioports >ports.txt
+	yad --fullscreen --text-info --filename="ports.txt"
+
+
 
 
 fi
